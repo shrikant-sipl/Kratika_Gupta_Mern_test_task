@@ -1,0 +1,79 @@
+form{
+    .form-label{
+        font-size: 16px;
+        color: #373A3C;
+    }
+    .form-control{
+        border-color: #E0E0E0;
+        border-radius: 8px;
+    }
+    .form-select{
+        border-color: #E0E0E0;
+        border-radius: 8px;
+        // padding-top: 11px;
+        // padding-bottom: 10px;
+    }
+    div.required{
+        position: relative;
+        &:before{
+            content:"\f069";
+            color:#F44351;
+            font-size: 6px;
+            font-family: "Font Awesome 5 Pro";
+            font-weight: bold;
+            position: absolute;
+            top: -1px;
+            left: -10px;
+        }
+    }
+}
+/* Buttons CSS */
+.btn{
+    min-width: 84px;
+    border-radius: 10px;
+    font-size: 16px;
+    &.btn-sm{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    &.btn-success{
+        background-color: #11901F;
+        border-color: #11901F;
+        &:hover{
+            background-color: #0c6616;
+            border-color: #0c6616;
+        }
+    }
+    &.btn-primary{
+        background-color: $primaryColor;
+        border-color: $primaryColor;
+        &:hover{
+            background-color: #003e78;
+            border-color: #003e78;
+        }
+    }
+    &.btn-secondary{
+        background-color: #9AA0A7;
+        border-color: #9AA0A7;
+        &:hover{
+            background-color: #5c636a;
+            border-color: #5c636a;
+        }
+    }
+}
+/* Change the white to any color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #F6F6F6 inset !important;
+}
+/*Change text in autofill textbox*/
+input:-webkit-autofill{
+    -webkit-text-fill-color: #8C8C8C !important;
+}
+
+// input[type="date"]:not(.has-value):before{
+//     color: lightgray;
+//     content: attr(placeholder);
+//   }

@@ -1,0 +1,119 @@
+table.table{
+    tr{
+        th{
+            &:first-child{
+                padding-left: 3px;
+            }
+        }
+        td{
+            padding-top: 20px;
+            padding-bottom: 7px;
+            color: $textPrimaryColor;
+            .arrow-link{
+                font-size: 20px;
+                font-weight: bold;
+                color: #9AA0A7;
+                &:hover{
+                    color: $primaryColor;
+                }
+            }
+            &:first-child{
+                padding-left: 0;
+            }
+            a{
+                color: #00569C;
+                text-decoration: none;
+            }
+        }
+        &:first-child{
+            td{
+                padding-top: 8px;
+            }
+        }
+    }
+    &.v-align-bottom{
+        tr{
+            td{
+                vertical-align: bottom !important;
+            }
+        }
+    }
+    &.custom-table{
+        tr{
+            th{
+                border: none;
+                font-size: 16px;
+                font-weight: bold;
+                padding: 9px 30px 5px 30px;
+                &:first-child{
+                    padding-left: 0;
+                }
+            }
+        }
+        tbody{
+            border: none;
+            tr{
+                td{
+                    border-color: #E4E4E4;
+                    font-size: 14px;
+                    padding: 30px 30px 9px 30px;
+                    &:first-child{
+                        padding-left: 0;
+                    }
+                    &:last-child{
+                        border: none;
+                        padding-bottom: 0;
+                    }
+                }
+                &:first-child{
+                    td{
+                        padding-top: 9px;
+                    }
+                }
+            }
+        }
+    }
+    &.dashboard-table{
+        thead{
+            tr{
+                th{
+                    color: #373A3C;
+                    font-size: 16px;
+                    font-weight: bold;
+                    white-space: nowrap;
+                    border-bottom: 1px solid #707070;
+                    padding: 5px 12px;
+                    &:first-child{
+                        padding-left: 0;
+                    }
+                    &:last-child{
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+        tbody{
+            border: none;
+            tr{
+                td{
+                    color: #373A3C;
+                    font-size: 14px;
+                    border: none;
+                    padding: 15px 12px;
+                    &:first-child{
+                        padding-left: 0;
+                    }
+                    &:last-child{
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+.table-sroll{
+    .table-responsive{
+        height: 500px;
+        overflow-y: auto;
+    }
+}
